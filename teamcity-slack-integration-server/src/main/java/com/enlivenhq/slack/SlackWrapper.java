@@ -47,6 +47,7 @@ public class SlackWrapper
         httpsURLConnection.setRequestMethod("POST");
         httpsURLConnection.setRequestProperty("User-Agent", "Enliven");
         httpsURLConnection.setRequestProperty("Accept-Language", "en-US,en;q=0.5");
+        httpsURLConnection.setRequestProperty("Content-Type", "application/json");
         httpsURLConnection.setDoOutput(true);
 
         DataOutputStream dataOutputStream = new DataOutputStream(
